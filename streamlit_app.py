@@ -39,7 +39,7 @@ if st.session_state.menu == "main":
     col1, col2 = st.columns(2)
     
     with col1:
-        if st.button("🛠️ 1. Technical Assistance", use_container_width=True):
+        if st.button("🖥️ 1. Technical Assistance", use_container_width=True):
             st.session_state.menu = "assistance"
             st.rerun()
         if st.button("📼 2. Dubout Operations", use_container_width=True):
@@ -56,7 +56,7 @@ if st.session_state.menu == "main":
 
 # 2. TECHNICAL ASSISTANCE MENU
 elif st.session_state.menu == "assistance":
-    st.markdown("### 🛠️ Technical Assistance Diagnostics")
+    st.markdown("### 🖥️ Technical Assistance Diagnostics")
     st.write("Select the issue you are currently experiencing:")
     
     if st.button("Computer not responding", use_container_width=True):
