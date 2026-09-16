@@ -85,7 +85,7 @@ elif st.session_state.menu == "dubout":
             st.success(f"📱 **SMS Pipeline Ready:** Please forward the message **'{dnb}'** to **09154417194**")
             
     st.write("Troubleshooting Steps:")
-    if st.button("No communications / Unclickable Recod button", use_container_width=True):
+    if st.button("No communications / Unclickable Record button", use_container_width=True):
         st.info("👉 **Resolution:** Reselect **Blackmagic** as your primary device control. If connection fails, dial **Local 2630** for on-site IO device powercycling.")
         
     if st.button("Dropped frames detected", use_container_width=True):
