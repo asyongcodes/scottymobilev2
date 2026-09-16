@@ -75,7 +75,7 @@ elif st.session_state.menu == "assistance":
 
 # 3. DUBOUT OPERATIONS MENU
 elif st.session_state.menu == "dubout":
-    st.markdown("### 🎛️ Dubout Operations Portal")
+    st.markdown("### 📼 Dubout Operations Portal")
     
     # Standardized input container
     with st.container(border=True):
