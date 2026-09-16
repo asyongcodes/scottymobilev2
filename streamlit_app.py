@@ -79,7 +79,7 @@ elif st.session_state.menu == "dubout":
     
     # Standardized input container
     with st.container(border=True):
-        st.markdown("**Dispatch Notification**")
+        st.markdown("**For PATCHING**")
         dnb = st.text_input("Enter Deck and Bay Designation:")
         if dnb:
             st.success(f"📱 **SMS Pipeline Ready:** Please forward the message **'{dnb}'** to **09154417194**")
