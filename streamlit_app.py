@@ -114,7 +114,7 @@ elif st.session_state.menu == "cinema":
 
 # 5. OTHER CONCERNS MENU
 elif st.session_state.menu == "other":
-    st.markdown("### ❓ Escapated Concerns")
+    st.markdown("### ❓ Escalate Concerns")
     st.warning("📍 **In-Person Assistance:** Please visit the **4th Floor TOC** for hands-on support from the TSTOC team.")
     
     st.divider()
