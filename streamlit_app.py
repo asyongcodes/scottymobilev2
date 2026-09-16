@@ -122,13 +122,14 @@ elif st.session_state.menu == "other":
         st.session_state.menu = "main"
         st.rerun()
 
-# --- BACKGROUND PHILIPPINES TIME TICKING LOOP ---
-ph_tz = pytz.timezone('Asia/Manila')
-
-while True:
+# --- ISOLATED, SMOOTH LIVE CLOCK LOOP ---
+# This updates ONLY the clock element every second without triggering global loading spinners
+@st.fragment(run_every=1.0)
+def update_clock():
+    ph_tz = pytz.timezone('Asia/Manila')
     date_str = datetime.now(ph_tz).strftime("%A, %B %d, %Y")
     time_str = datetime.now(ph_tz).strftime("%I:%M:%S %p")
-    
-    # Renders the clean stacked timestamp inside the sidebar
     clock_placeholder.markdown(f"**{date_str}**\n\n**{time_str}**")
-    time.sleep(1)
+
+# Start the quiet isolated clock loop
+update_clock()
