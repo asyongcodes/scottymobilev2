@@ -104,7 +104,7 @@ elif st.session_state.menu == "cinema":
     if st.button("Request Media Preview Setup", use_container_width=True):
         st.info("📞 **Action Required:** Contact **Local 2630** for specialized projector, audio and video array preparation.")
         
-    if st.button("Request Meeting Set Up", use_container_width=True):
+    if st.button("Request Meeting Setup", use_container_width=True):
         st.info("📞 **Action Required:** Contact **Local 2630** for facility arrangement (tables and chairs).")
         
     st.divider()
