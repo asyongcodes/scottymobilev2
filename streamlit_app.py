@@ -42,7 +42,7 @@ if st.session_state.menu == "main":
         if st.button("🛠️ 1. Technical Assistance", use_container_width=True):
             st.session_state.menu = "assistance"
             st.rerun()
-        if st.button("🎛️ 2. Dubout Operations", use_container_width=True):
+        if st.button("📼 2. Dubout Operations", use_container_width=True):
             st.session_state.menu = "dubout"
             st.rerun()
             
